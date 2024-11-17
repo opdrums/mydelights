@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Delights - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="My Delights Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Menú -->
+        <section id="menu">
+            <h1>Menú de Platos</h1>
+            <div id="menu-items">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios">
+            <h1>Servicios Especiales</h1>
+            <div class="servicio">
+                <h2>Banquetes</h2>
+                <p>Organiza tu banquete con nosotros. Precios según la cantidad de personas.</p>
+            </div>
+            <div class="servicio">
+                <h2>Eventos Empresariales</h2>
+                <p>Haz tu evento corporativo con el mejor servicio de comida.</p>
+            </div>
+        </section>
+
+        <!-- Sección Pedidos -->
+        <section id="pedidos">
+            <h1>Realiza tu Pedido</h1>
+            <form id="order-form">
+                <label for="cliente">Nombre del Cliente</label>
+                <input type="text" id="cliente" name="cliente" required>
+
+                <label for="producto">Selecciona un Producto</label>
+                <select id="producto" name="producto" required>
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                <button type="submit">Realizar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Delights - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
